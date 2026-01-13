@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 // Funcion para mostrar la caratula del proyecto
-void caratula() {
+void caratula() 
+{
     
     printf("Calculo de Area y Perimetro: Rombo\n");
     printf("Alumno: Eduardo Rosas Vazquez\n");
@@ -12,7 +13,8 @@ void caratula() {
     getchar();
 }
 
-int main() {
+int main() 
+{
     // Llamada a la funcion inicial
     caratula();
     
