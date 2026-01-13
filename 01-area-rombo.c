@@ -17,7 +17,11 @@ int main() {
     caratula();
     
     // Limpieza de pantalla (funciona en Linux/macOS, en Windows de Dev-C++ es "cls")
-    system("clear"); 
+    #ifdef _WIN32
+    system("cls");   // Si es Windows, usa cls
+    #else
+    system("clear"); // Si es Linux o Mac, usa clear
+    #endif
     
     double D_mayor, d_menor, lado, area, perimetro;
     
