@@ -25,7 +25,6 @@ int main() {
     
     double D_mayor, d_menor, lado, area, perimetro;
     
-    printf("--- ENTRADA DE DATOS ---\n");
     printf("Introduce la Diagonal Mayor (D): ");
     scanf("%lf", &D_mayor);
     
@@ -42,7 +41,6 @@ int main() {
     // Formula del perimetro: Lado * 4
     perimetro = lado * 4;
     
-    printf("\n--- RESULTADOS FINALES ---\n");
     printf("El area del rombo es: %.2lf\n", area);
     printf("El perimetro del rombo es: %.2lf\n", perimetro);
     
