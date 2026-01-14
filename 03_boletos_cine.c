@@ -1,6 +1,9 @@
-/* * Ejercicio: Venta de Boletos de Cine
- * Alumno: Eduardo Rosas Vazquez
- * Materia: Programacion I - UNAM
+/* * PROGRAMA: Venta de Boletos de Cine
+ * ALUMNO: Eduardo Rosas Vazquez
+ * MATERIA: Programacion I - UNAM
+ * DESCRIPCIÓN: Sistema básico de preventa de boletos que permite elegir entre 
+ * cuatro películas mediante un menú. Calcula el total a pagar y aplica un 
+ * descuento automático del 35% en compras mayores a 25 boletos.
  */
 
 #include <stdio.h>
