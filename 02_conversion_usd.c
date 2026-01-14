@@ -1,11 +1,17 @@
+/* * Ejercicio: Conversor de Divisas (Dólares a Pesos)
+ * Materia: Programación I - UNAM FES Acatlán
+ * Alumno: Eduardo Rosas Vazquez
+ * Descripción: Programa que utiliza una función para realizar la conversión 
+ * de moneda extranjera a moneda nacional.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
-
-// funcion presentacion 
+// Funcion para mostrar la caratula del proyecto 
 void caratula() 
 {
-    printf("Calculo de Area y Perimetro: Rombo\n");
+    printf("Conversor de Moneda: USD a MXN\n");
     printf("Alumno: Eduardo Rosas Vazquez\n");
     printf("Materia: Programacion I - UNAM\n\n");
     
@@ -13,33 +19,33 @@ void caratula()
     getchar();
 }
 
-// funcion conversion
+// Funcion para realizar la operacion de conversion
 float convertir(float dolares)
 {
-    //variables
+    // Tipo de cambio fijo para el ejercicio
     float dolar = 18.37;
     float pesos;
     
-    //convertir dolares por la cantidad de pesos ingresada
+    // Proceso de conversion
     pesos = dolares * dolar;
     
-    //devolver resultado
+    // Devolver resultado al main
     return pesos;
 }
 
 int main()
 {
-    //presentacion 
+    // Presentacion inicial
     caratula();
     
-    // Limpieza de pantalla (funciona en Linux/macOS, en Windows de Dev-C++ es "cls")
+    // Limpieza de pantalla inicial
     #ifdef _WIN32
-    system("cls");   // Si es Windows, usa cls
+        system("cls");
     #else
-    system("clear"); // Si es Linux o Mac, usa clear
+        system("clear");
     #endif
     
-    //variables
+    // Variables locales
     float dolares;
     float resultado;
     
@@ -47,16 +53,20 @@ int main()
     printf("Ingresa la cantidad de dolares a convertir: ");
     scanf("%f", &dolares);
     
-    // Limpieza de pantalla (funciona en Linux/macOS, en Windows de Dev-C++ es "cls")
+    // Limpieza antes de mostrar el resultado
     #ifdef _WIN32
-    system("cls");   // Si es Windows, usa cls
+        system("cls");
     #else
-    system("clear"); // Si es Linux o Mac, usa clear
+        system("clear");
     #endif
     
+    // Llamada a la funcion y muestra de resultados
     resultado = convertir(dolares);
-    printf("RESULTADO\n\n");
-    printf("%.2f USD = %.2f MXN", dolares, resultado);
+    
+    printf("----------------------------------------\n");
+    printf("RESULTADO FINAL\n");
+    printf("%.2f USD equivalen a: %.2f MXN\n", dolares, resultado);
+    printf("\n----------------------------------------\n");
     
     return 0;
 }
