@@ -1,3 +1,8 @@
+/* * Ejercicio: Venta de Boletos de Cine
+ * Alumno: Eduardo Rosas Vazquez
+ * Materia: Programacion I - UNAM
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,81 +17,76 @@ void caratula()
     getchar();
 }
 
-
 int main() 
 {
-    //presentacion 
+    // presentacion 
     caratula();
     
-    // Limpieza de pantalla (funciona en Linux/macOS, en Windows de Dev-C++ es "cls")
     #ifdef _WIN32
-    system("cls");   // Si es Windows, usa cls
+        system("cls");
     #else
-    system("clear"); // Si es Linux o Mac, usa clear
+        system("clear");
     #endif
     
     int opcion, boletos;
     float precio;
     
     puts("MENU DE PELICULAS\n");
-    
     puts("1. Gol = $100");
     puts("2. Evasion o Victoria = $150");
-    puts("3. Quiero ser como Beckan = $200");
+    puts("3. Quiero ser como Beckham = $200");
     puts("4. El milagro de Berna = $250\n");
     
     printf("Elige una opcion: ");
-    scanf("%d",&opcion);
-    
+    scanf("%d", &opcion);
     
     if ((opcion > 0) && (opcion <= 4))
     {
         printf("Ingrese la cantidad de boletos a comprar: ");
-        scanf("%d",&boletos);
+        scanf("%d", &boletos);
         
-        // Limpieza de pantalla (funciona en Linux/macOS, en Windows de Dev-C++ es "cls")
         #ifdef _WIN32
-        system("cls");   // Si es Windows, usa cls
+            system("cls");
         #else
-        system("clear"); // Si es Linux o Mac, usa clear
+            system("clear");
         #endif
         
         switch (opcion)
         {
             case 1:
-            precio = 100;
-            break;
-            
+                precio = 100;
+                break;
             case 2:
-            precio = 150;
-            break;
-            
+                precio = 150;
+                break;
             case 3: 
-            precio = 200;
-            break;
-            
+                precio = 200;
+                break;
             case 4:
-            precio = 250;
+                precio = 250;
+                break;
         }
         
+        printf("----------------------------------------\n");
         if (boletos > 25)
         {
-            printf("Total a pagar: $%f",(boletos*precio)-((boletos*precio)*.35));
+            printf("Total a pagar (con 35%% desc): $%.2f\n", (boletos * precio) * 0.65);
         }
         else
         {
-            printf("Total a pagar: $%f", boletos*precio);
+            printf("Total a pagar: $%.2f\n", boletos * precio);
         }
+        printf("----------------------------------------\n");
     }
     else
     {
-        // Limpieza de pantalla (funciona en Linux/macOS, en Windows de Dev-C++ es "cls")
         #ifdef _WIN32
-        system("cls");   // Si es Windows, usa cls
+            system("cls");
         #else
-        system("clear"); // Si es Linux o Mac, usa clear
+            system("clear");
         #endif
-        printf("ERROR\nElige una opcion valida (1-2-3-4).");
+        printf("ERROR\nElige una opcion valida (1-2-3-4).\n");
     }
+
     return 0;
 }
