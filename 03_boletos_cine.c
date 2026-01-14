@@ -43,7 +43,13 @@ int main()
     {
         printf("Ingrese la cantidad de boletos a comprar: ");
         scanf("%d",&boletos);
-        system("clear");
+        
+        // Limpieza de pantalla (funciona en Linux/macOS, en Windows de Dev-C++ es "cls")
+        #ifdef _WIN32
+        system("cls");   // Si es Windows, usa cls
+        #else
+        system("clear"); // Si es Linux o Mac, usa clear
+        #endif
         
         switch (opcion)
         {
