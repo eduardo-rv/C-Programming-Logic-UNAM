@@ -36,7 +36,7 @@ int main()
             system("clear");
         #endif
 
-        printf("--- ANALIZADOR DE AÑOS ---\n\n");
+        printf("ANALIZADOR DE AÑOS\n\n");
         printf("Ingresa un año: ");
         scanf("%d", &anio);
         
