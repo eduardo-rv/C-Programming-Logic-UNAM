@@ -88,5 +88,5 @@ int main()
         #endif
         printf("ERROR\nElige una opcion valida (1-2-3-4).");
     }
-    
+    return 0;
 }
