@@ -7,7 +7,7 @@ void caratula()
 {
     printf("Calculo de Area y Perimetro: Rombo\n");
     printf("Alumno: Eduardo Rosas Vazquez\n");
-    printf("Materia: Programacion II - UNAM\n\n");
+    printf("Materia: Programacion I - UNAM\n\n");
     
     printf("\nPresiona ENTER para comenzar el programa...");
     getchar();
