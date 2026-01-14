@@ -4,7 +4,7 @@
 // funcion presentacion
 void caratula() 
 {
-    printf("Venta De Boletos De Cine\n");
+    printf("Determinar si un ano es bisiesto\n");
     printf("Alumno: Eduardo Rosas Vazquez\n");
     printf("Materia: Programacion I - UNAM\n\n");
     
