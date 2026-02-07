@@ -1,60 +1,60 @@
-/* * Ejercicio: Cálculo de Geometría (Rombo)
- * Materia: Programación I - UNAM FES Acatlán
- * Alumno: Eduardo Rosas Vazquez
- * Descripción: Programa básico para calcular el área y perímetro de un rombo
- * solicitando datos al usuario.
+/*
+ * Exercise: Geometry Calculation (Rhombus)
+ * Course: Programming I - UNAM FES Acatlán
+ * Student: Eduardo Rosas Vazquez
+ * Description: Basic calculator for rhombus area and perimeter.
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 
-// Funcion para mostrar la caratula del proyecto
-void caratula() 
+// Function to display the project header
+void display_header() 
 {
-    printf("Calculo de Area y Perimetro: Rombo\n");
-    printf("Alumno: Eduardo Rosas Vazquez\n");
-    printf("Materia: Programacion I - UNAM\n\n");
+    printf("Area and Perimeter Calculation: Rhombus\n");
+    printf("Student: Eduardo Rosas Vazquez\n");
+    printf("Course: Programming I - UNAM\n\n");
     
-    printf("\nPresiona ENTER para comenzar el programa...");
+    printf("\nPress ENTER to start the program...");
     getchar();
 }
 
 int main() 
 {
-    // Presentación inicial del alumno
-    caratula();
+    // Initial student presentation
+    display_header();
     
-    // Bloque de compatibilidad para limpieza de pantalla
+    // Compatibility block for screen clearing
     #ifdef _WIN32
         system("cls");   
     #else
         system("clear"); 
     #endif
     
-    // Definición de variables
-    double D_mayor, d_menor, lado, area, perimetro;
+    // Variable definitions
+    double major_diagonal, minor_diagonal, side, area, perimeter;
     
-    // Entrada de datos del usuario
-    printf("Introduce la Diagonal Mayor (D): ");
-    scanf("%lf", &D_mayor);
+    // User input section
+    printf("Enter the Major Diagonal (D): ");
+    scanf("%lf", &major_diagonal);
     
-    printf("Introduce la Diagonal Menor (d): ");
-    scanf("%lf", &d_menor);
+    printf("Enter the Minor Diagonal (d): ");
+    scanf("%lf", &minor_diagonal);
     
-    printf("Introduce la medida de uno de los lados: ");
-    scanf("%lf", &lado);
+    printf("Enter the measurement of one side: ");
+    scanf("%lf", &side);
     
-    // Operaciones matemáticas
-    // Área: Diagonal Mayor por diagonal menor entre 2
-    area = (D_mayor * d_menor) / 2;
+    // Mathematical calculations
+    // Area: Major diagonal times minor diagonal divided by 2
+    area = (major_diagonal * minor_diagonal) / 2;
     
-    // Perímetro: Suma de sus cuatro lados iguales
-    perimetro = lado * 4;
+    // Perimeter: Sum of its four equal sides
+    perimeter = side * 4;
     
-    // Salida de resultados con formato de 2 decimales
+    // Output results with 2 decimal places
     printf("\n----------------------------------------\n");
-    printf("El area del rombo es: %.2lf\n", area);
-    printf("El perimetro del rombo es: %.2lf\n", perimetro);
+    printf("The area of the rhombus is: %.2lf\n", area);
+    printf("The perimeter of the rhombus is: %.2lf\n", perimeter);
     printf("----------------------------------------\n");
     
     return 0;
