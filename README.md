@@ -23,7 +23,11 @@ To solve incremental programming logic challenges, moving from basic variable ma
 
 Task	Shortcut	English Command
 Save your work	Ctrl + O	"Write Out"
+
 Exit the editor	Ctrl + X	"Exit"
+
 Search for text	Ctrl + W	"Where Is"
+
 Cut a whole line	Ctrl + K	"Cut Text"
+
 Paste a line	Ctrl + U	"Uncut Text"
