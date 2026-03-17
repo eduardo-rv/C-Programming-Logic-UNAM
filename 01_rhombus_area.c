@@ -58,4 +58,6 @@ int main()
     printf("----------------------------------------\n");
     
     return 0;
+
+    //esto es una prueba de git desde la terminal
 }
