@@ -1,9 +1,3 @@
-/*
- * Exercise: Geometry Calculation (Rhombus)
- * Course: Programming I - UNAM FES Acatlán
- * Student: Eduardo Rosas Vazquez
- * Description: Basic calculator for rhombus area and perimeter.
- */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -59,5 +53,4 @@ int main()
     
     return 0;
 
-    //esto es una prueba de git desde la terminal
 }
