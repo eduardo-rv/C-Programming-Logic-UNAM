@@ -7,9 +7,13 @@ void Display_header();
 
 int main()
 {
+	//variables
+	int option;
+
 	//Initial presentation
 	Display_header();
 
+	option = Movie_main();
 	return 0;
 }
 
@@ -31,5 +35,17 @@ void Display_header()
 
 int Movie_main()
 {
+	int option;
 
+	printf("1. Gol.\n");
+	printf("2. Gol 2\n");
+	printf("3. In undertow\n");
+	printf("4. Next of kin\n");
+	printf("Eneter your choice: ");
+	//fflush(stdin);
+	scanf("%d", &option);
+
+	system("clear");
+
+	return option;
 }
