@@ -5,7 +5,7 @@
 void Display_header();
 int Movie_main();
 float Calculate(int option, int amount);
-
+float Discount(float total, int amount);
 
 int main()
 {
@@ -20,6 +20,7 @@ int main()
 
 	total = Calculate(option, amount);
 
+	total = Discount(total, amount);
 	printf("Total %f", total);
 	return 0;
 }
@@ -82,9 +83,13 @@ float Calculate(int option, int amount)
 			printf("Error");
 	}
 
+	return total;
 
-	// Discount
-	if (amount > 25)
+}
+
+float Discount(float total, int amount)
+{
+	if(amount > 25)
 	{
 		total = total - (total * .35);
 		return total;
@@ -93,6 +98,5 @@ float Calculate(int option, int amount)
 	{
 		return total;
 	}
-
 }
 
