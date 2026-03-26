@@ -3,7 +3,7 @@
 
 
 void Display_header();
-int Movie_main();
+void Movie_main(int *option, int *amount);
 float Calculate(int option, int amount);
 float Discount(float total, int amount);
 
@@ -16,12 +16,12 @@ int main()
 	//Initial presentation
 	Display_header();
 
-	option, amount = Movie_main();
+	Movie_main(&option, &amount);
 
 	total = Calculate(option, amount);
 
 	total = Discount(total, amount);
-	printf("Total %f", total);
+	printf("\nTotal a pagar: %.2f\n\n", total);
 	return 0;
 }
 
@@ -41,9 +41,8 @@ void Display_header()
 	system("clear");
 }
 
-int Movie_main()
+void Movie_main(int *option, int *amount)
 {
-	int option, amount;
 
 	printf("1. Gol.__________ 100\n");
 	printf("2. Gol 2_________ 200\n");
@@ -51,14 +50,12 @@ int Movie_main()
 	printf("4. Next of kin___ 400\n");
 	printf("Eneter your choice: ");
 	//fflush(stdin);
-	scanf("%d", &option);
+	scanf("%d", option);
 
 	printf("Enter amount: ");
-	scanf("%d", &amount);
+	scanf("%d", amount);
 
 	system("clear");
-
-	return option, amount;
 }
 
 float Calculate(int option, int amount)
