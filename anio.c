@@ -57,6 +57,7 @@ void ClearScreen()
 
 void Display()
 {
+
         printf("\n------LEAP YEAR-------\n\n");
         printf("This program asks you for a year and tells you if the entered year is leap or normal. \n\n");
         printf("Contreras Aviles José Raúl\n");
@@ -64,4 +65,5 @@ void Display()
 	printf("press enter to continue....");
 
         ClearScreen();
+
 }
