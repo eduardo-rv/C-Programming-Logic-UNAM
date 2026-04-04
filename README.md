@@ -15,5 +15,5 @@ To test the code locally, clone the repository, compile the C file, and run the 
 ```bash
 git clone https://github.com/eduardo-rv/C-Programming-Logic-UNAM.git
 cd C-Programming-Logic-UNAM
-gcc file_name.c -o app
+gcc FILE_NAME.c -o app
 ./app
