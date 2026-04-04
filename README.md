@@ -1,7 +1,19 @@
-# 💻 Programming Fundamentals & Logic in C
-### Applied Mathematics and Computing (MAC) - FES Acatlán, UNAM
+# 💻 C Programming Logic
 
-This repository documents my **learning curve** and technical evolution in C programming. As an aspiring **Data Engineer**, I believe that mastering algorithmic logic and resource management from the ground up is essential for building efficient data systems in the future.
+First-semester C programming exercises from the Applied Mathematics and Computation (MAC) program at UNAM. Focusing my learning path on data systems and software engineering, this repository holds my foundational logic and algorithm projects.
 
-## 🎯 Objective
-To solve incremental programming logic challenges, moving from basic variable manipulation to complex data structures and algorithms applied within the MAC curriculum.
+## 🛠️ Tech Stack
+* **Language:** C
+* **Compiler:** GCC
+* **Editor:** Vim
+* **Environment:** Linux (Ubuntu) Terminal
+
+## 🚀 How to Run
+
+To test the code locally, clone the repository, compile the C file, and run the executable:
+
+```bash
+git clone https://github.com/eduardo-rv/C-Programming-Logic-UNAM.git
+cd C-Programming-Logic-UNAM
+gcc file_name.c -o app
+./app
