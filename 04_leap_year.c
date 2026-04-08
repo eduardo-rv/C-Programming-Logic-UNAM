@@ -50,7 +50,7 @@ void CalculateYear(int year)
 void ClearScreen()
 {
 	getchar();
-	system("cls");
+	system("clear");
 
 }
 
