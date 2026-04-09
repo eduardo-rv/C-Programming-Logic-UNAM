@@ -30,6 +30,7 @@ int main()
 	{
 		printf("\n\nIt is not a triangle\n\n");
 	}
+	
 
 
 	return 0;
@@ -37,7 +38,7 @@ int main()
 
 void Clear_screen()
 {
-	printf("\n\npress to ENTER to continue...");
+	printf("\n\npress ENTER to continue...");
 	getchar();
 	system("clear");
 }
@@ -46,7 +47,7 @@ void Display_header()
 {
 	printf("\nCLASSIFICATION OF TRIANGLES\n");
 	printf("This program asks you for the lengths of three sides and determines if the triangle is equilateral, isosceles, or scalene. \n\n");
-	printf("Rosas Vazquez Eduardo");
+	printf("Author: Rosas Vazquez Eduardo");
 
 	Clear_screen();
 }
@@ -76,7 +77,7 @@ void Classify_triangle(float a, float b, float c)
 	}
 	else
 	{
-		printf("\n\nEcalene triangle\n\n");
+		printf("\n\nScalene triangle\n\n");
 	}
 
 }
