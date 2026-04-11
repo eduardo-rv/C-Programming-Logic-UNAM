@@ -1,49 +1,27 @@
-# 01 - Rhombus Area and Perimeter / Área y Perímetro del Rombo
+# Program 01: Rhombus Area and Perimeter Calculator
 
-## English Description
-This is one of my first programs! It calculates the area and perimeter of a rhombus. It uses basic `printf` and `scanf` functions and introduces a compatibility block to clear the screen on both Windows and Linux.
-
-### Logic
-1. Ask for diagonals ($D, d$) and one side ($s$).
-2. Calculate Area: $(D \times d) / 2$
-3. Calculate Perimeter: $s \times 4$
+## 📝 Assignment
+Create a C program that calculates both the **Area** and **Perimeter** of a rhombus. The program must interact with the user to collect the necessary geometric dimensions and display the calculated results clearly in the terminal.
 
 ---
 
-## Descripción en Español
-¡Este es uno de mis primeros programas! Calcula el área y el perímetro de un rombo. Utiliza funciones básicas de entrada/salida y un bloque de compatibilidad para limpiar la pantalla tanto en Windows como en Linux.
-
-### Lógica
-1. Solicitar las diagonales ($D, d$) y un lado ($s$).
-2. Calcular el Área: $(D \times d) / 2$
-3. Calcular el Perímetro: $s \times 4$
-
----
-
-## 🚀 Beginner Challenges / Retos para Principiantes
-* **Change the Shape:** Can you modify this to calculate the area of a triangle?
-* **Text Formatting:** Try making the results appear in a different color in the terminal. # 01 - Rhombus Area and Perimeter / Área y Perímetro del Rombo
-
-## English Description
-This is one of my first programs! It calculates the area and perimeter of a rhombus. It uses basic `printf` and `scanf` functions and introduces a compatibility block to clear the screen on both Windows and Linux.
-
-### Logic
-1. Ask for diagonals ($D, d$) and one side ($s$).
-2. Calculate Area: $(D \times d) / 2$
-3. Calculate Perimeter: $s \times 4$
+## 🛠 Requirements
+1. **User Input:** The program must prompt the user to enter the Major Diagonal ($D$), the Minor Diagonal ($d$), and the length of one side ($s$).
+2. **Logic Implementation:** Apply the standard geometric formulas for a rhombus.
+3. **User Interface:** - Include a header with student and course information.
+   - Implement a "Clear Screen" block (compatible with both Windows and Linux) to maintain a clean terminal environment.
+4. **Data Formatting:** Display the final results using exactly 2 decimal places.
 
 ---
 
-## Descripción en Español
-¡Este es uno de mis primeros programas! Calcula el área y el perímetro de un rombo. Utiliza funciones básicas de entrada/salida y un bloque de compatibilidad para limpiar la pantalla tanto en Windows como en Linux.
+## 📐 Mathematical Formulas
+- **Area ($A$):** $$A = \frac{D \times d}{2}$$
 
-### Lógica
-1. Solicitar las diagonales ($D, d$) y un lado ($s$).
-2. Calcular el Área: $(D \times d) / 2$
-3. Calcular el Perímetro: $s \times 4$
+- **Perimeter ($P$):** $$P = s \times 4$$
 
 ---
 
-## 🚀 Beginner Challenges / Retos para Principiantes
-* **Change the Shape:** Can you modify this to calculate the area of a triangle?
-* **Text Formatting:** Try making the results appear in a different color in the terminal.   
+## 🚀 Challenges
+1. **Input Validation:** Add logic to check if the user inputs are positive numbers. If a negative number is entered, display an error message.
+2. **Geometric Deduction:** If only the diagonals ($D$ and $d$) are provided, calculate the side ($s$) automatically using the Pythagorean theorem:
+$$s = \sqrt{\left(\frac{D}{2}\right)^2 + \left(\frac{d}{2}\right)^2}$$
