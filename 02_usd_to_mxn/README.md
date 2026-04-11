@@ -7,8 +7,8 @@ Develop a C program that performs a currency conversion from United States Dolla
 
 ## 🛠 Requirements
 1. **Functional Design:**
-   - Create a function to handle the user input for the amount.
-   - Create a specific function to perform the math and display the result.
+     Create a function to handle the user input for the amount.
+     Create a specific function to perform the math and display the result.
 2. **User Input:** Prompt the user to enter the amount in USD (using floating-point numbers for precision).
 3. **Logic Implementation:** Use a fixed exchange rate to convert the currency.
 4. **User Interface:** Include a clear header and ensure the terminal is cleared before starting the main process.
