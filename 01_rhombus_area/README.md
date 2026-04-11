@@ -3,7 +3,7 @@
 ## 📝 Assignment
 Create a C program that calculates both the **Area** and **Perimeter** of a rhombus. The program must interact with the user to collect the necessary geometric dimensions and display the calculated results clearly in the terminal.
 
----
+
 
 ## 🛠 Requirements
 1. **User Input:** The program must prompt the user to enter the Major Diagonal ($D$), the Minor Diagonal ($d$), and the length of one side ($s$).
@@ -12,14 +12,14 @@ Create a C program that calculates both the **Area** and **Perimeter** of a rhom
    - Implement a "Clear Screen" block (compatible with both Windows and Linux) to maintain a clean terminal environment.
 4. **Data Formatting:** Display the final results using exactly 2 decimal places.
 
----
+
 
 ## 📐 Mathematical Formulas
-- **Area ($A$):** $$A = \frac{D \times d}{2}$$
+ **Area ($A$):** $$A = \frac{D \times d}{2}$$
 
-- **Perimeter ($P$):** $$P = s \times 4$$
+ **Perimeter ($P$):** $$P = s \times 4$$
 
----
+
 
 ## 🚀 Challenges
 1. **Input Validation:** Add logic to check if the user inputs are positive numbers. If a negative number is entered, display an error message.
