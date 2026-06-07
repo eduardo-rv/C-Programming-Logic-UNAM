@@ -1,6 +1,6 @@
 # C Programming Logic
 
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white) ![GCC](https://img.shields.io/badge/GCC-A8B9CC?style=flat-square&logo=gnu&logoColor=white) ![Vim](https://img.shields.io/badge/Vim-019733?style=flat-square&logo=vim&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white) ![GCC](https://img.shields.io/badge/GCC-A8B9CC?style=flat-square&logo=gnu&logoColor=white) ![Vim](https://img.shields.io/badge/Vim-019733?style=flat-square&logo=vim&logoColor=white) ![WSL](https://img.shields.io/badge/WSL-0a97f5?style=flat-square&logo=linux&logoColor=white)
 
 This repository contains my first-semester C programming exercises from the Applied Mathematics and Computing (MAC) program at UNAM. It serves as an archive of my foundational logic, algorithm design, and memory management projects, built as the groundwork for transitioning into robust data engineering.
 
