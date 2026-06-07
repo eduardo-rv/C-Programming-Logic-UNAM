@@ -1,6 +1,6 @@
 # C Programming Logic
 
-![UNAM](https://img.shields.io/badge/UNAM-MAC_1st_Semester-D4AF37?labelColor=002B5C&style=flat-square) ![C](https://img.shields.io/badge/C-00599C?labelColor=2b2b2b&style=flat-square) ![GCC](https://img.shields.io/badge/Compiler-GCC-A8B9CC?labelColor=2b2b2b&style=flat-square) ![Vim](https://img.shields.io/badge/Editor-Vim-019733?labelColor=2b2b2b&style=flat-square) ![Linux](https://img.shields.io/badge/Environment-Linux-FCC624?labelColor=2b2b2b&style=flat-square)
+![UNAM](https://img.shields.io/badge/UNAM-MAC_1st_Semester-D4AF37?labelColor=002B5C&style=flat-square) ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white) ![GCC](https://img.shields.io/badge/GCC-A8B9CC?style=flat-square&logo=gnu&logoColor=white) ![Vim](https://img.shields.io/badge/Vim-019733?style=flat-square&logo=vim&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 
 This repository contains my first-semester C programming exercises from the Applied Mathematics and Computing (MAC) program at UNAM. It serves as an archive of my foundational logic, algorithm design, and memory management projects, built as the groundwork for transitioning into robust data engineering.
 
