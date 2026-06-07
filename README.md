@@ -1,19 +1,17 @@
-# 💻 C Programming Logic
+# C Programming Logic
 
-First-semester C programming exercises from the Applied Mathematics and Computation (MAC) program at UNAM. Focusing my learning path on data systems and software engineering, this repository holds my foundational logic and algorithm projects.
+![UNAM](https://img.shields.io/badge/UNAM-MAC_1st_Semester-D4AF37?labelColor=002B5C&style=flat-square) ![C](https://img.shields.io/badge/C-00599C?labelColor=2b2b2b&style=flat-square) ![GCC](https://img.shields.io/badge/Compiler-GCC-A8B9CC?labelColor=2b2b2b&style=flat-square) ![Vim](https://img.shields.io/badge/Editor-Vim-019733?labelColor=2b2b2b&style=flat-square) ![Linux](https://img.shields.io/badge/Environment-Linux-FCC624?labelColor=2b2b2b&style=flat-square)
 
-## 🛠️ Tech Stack
-* **Language:** C
-* **Compiler:** GCC
-* **Editor:** Vim
-* **Environment:** Linux (Ubuntu) Terminal
+This repository contains my first-semester C programming exercises from the Applied Mathematics and Computing (MAC) program at UNAM. It serves as an archive of my foundational logic, algorithm design, and memory management projects, built as the groundwork for transitioning into robust data engineering.
 
-## 🚀 How to Run
+Rather than relying on heavy IDEs, the development workflow for these exercises is strictly terminal-based. All programs are written using Vim, compiled with GCC, and executed natively in a Linux environment via WSL, maintaining a strict focus on low-level system understanding and command-line proficiency.
 
-To test the code locally, clone the repository, compile the C file, and run the executable:
+## Local Execution
+
+To compile and test any of the programs locally, clone the repository, navigate to the specific directory, and compile the C file using GCC before running the executable.
 
 ```bash
-git clone https://github.com/eduardo-rv/C-Programming-Logic-UNAM.git
+git clone [https://github.com/eduardo-rv/C-Programming-Logic-UNAM.git](https://github.com/eduardo-rv/C-Programming-Logic-UNAM.git)
 cd C-Programming-Logic-UNAM
 gcc FILE_NAME.c -o app
 ./app
