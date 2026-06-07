@@ -1,27 +1,24 @@
-# Program 01: Rhombus Area and Perimeter Calculator
+# Program 1: Rhombus Area
 
-## Assignment
-> Create a C program that calculates both the **Area** and **Perimeter** of a rhombus. The program must interact with the user to collect the necessary geometric dimensions and display the calculated results clearly in the terminal.
+![C Logic](https://img.shields.io/badge/C_Logic-Program_01-00599C?labelColor=2b2b2b&style=flat-square)
 
+This project is a CLI application written in C that calculates the area and perimeter of a rhombus. It serves as an introductory exercise in standard input/output operations, variable assignment, and basic mathematical execution within a compiled language.
 
+The technical focus of this script includes data type handling using double-precision floating-point formats ("%lf") and cross-platform terminal management. It implements a preprocessor directive block ("#ifdef _WIN32") to determine the host operating system at compile time and execute the appropriate screen-clearing command. Additionally, the code utilizes a custom void function to modularize the initial presentation banner, keeping the main execution block clean and focused on calculation logic.
 
-## Requirements
-> The program must prompt the user to enter the Major Diagonal ($D$), the Minor Diagonal ($d$), and the length of one side ($s$).  
-> Apply the standard geometric formulas for a rhombus.  
-> Include a header with student and course information.  
-> Implement a "Clear Screen" block (compatible with both Windows and Linux) to maintain a clean terminal environment.  
-> Display the final results using exactly 2 decimal places.
+## Example Output
+```text
+Area and Perimeter Calculation: Rhombus
+Student: Eduardo Rosas Vazquez
+Course: Programming I - UNAM
 
+Press ENTER to start the program...
 
+Enter the Major Diagonal (D): 10
+Enter the Minor Diagonal (d): 8
+Enter the measurement of one side: 6.4
 
-## Mathematical Formulas
-> Area ($A$):** $$A = \frac{D \times d}{2}$$  
-
-> Perimeter ($P$):** $$P = s \times 4$$
-
-
-
-## Challenges
-> 1.Add logic to check if the user inputs are positive numbers. If a negative number is entered, display an error message.  
-> 2.If only the diagonals ($D$ and $d$) are provided, calculate the side ($s$) automatically using the Pythagorean theorem:  
-$$s = \sqrt{\left(\frac{D}{2}\right)^2 + \left(\frac{d}{2}\right)^2}$$
+----------------------------------------
+The area of the rhombus is: 40.00
+The perimeter of the rhombus is: 25.60
+----------------------------------------
