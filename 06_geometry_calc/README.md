@@ -1,35 +1,27 @@
-# Program 06: Multi-Shape Geometry Calculator
+# Program 6: Geometry Calculator
 
-## Assignment
-> Develop a menu-driven application in C that calculates the **Area** and **Perimeter** for various geometric shapes. The program should remain active, allowing the user to perform multiple calculations until they explicitly choose to exit.
+![C Logic](https://img.shields.io/badge/C_Logic-Program_06-00599C?labelColor=2b2b2b&style=flat-square)
 
+This project is an interactive CLI application that allows users to continuously calculate the area and perimeter of various geometric shapes (circle, rectangle, triangle, rhombus, and trapezoid) through a navigational menu.
 
+The technical focus of this application is state maintenance and input buffer management. The program utilizes a "do-while" loop to keep the execution running continuously until the user explicitly selects the exit condition. The menu logic is routed using a "switch" statement that handles the specific mathematical formulas and variable requirements for each shape. Furthermore, it defines mathematical constants using preprocessor macros ("#define PI") and implements a "while(getchar() != '\n');" loop to manually flush the standard input buffer, preventing skipped inputs caused by lingering newline characters from previous "scanf" calls.
 
-## Requirements
-> Implement a menu offering the following shapes:  
-> Circle  
-> Rectangle  
-> Triangle  
-> Rhombus  
-> Trapezoid  
-> Use a `do-while` loop to keep the program running until the "Exit" option is selected.  
-> Use a function to manage the menu and return the user's choice.  
-> Use a centralized `Calculator` function with a `switch` statement to handle different geometric logic.  
-> Use `#define` to establish a precise value for $\pi$ ($3.14159$).  
-> Ensure the screen is cleared after each calculation to provide a professional user experience.
+## Example Output
+```text
+1. Circle
+2. Rectangle
+3. Triangle
+4. Rhombus
+5. Trapezoid
+6. Exit
+Select an option: 1
 
 
-
-## Geometric Formulas Included
-> - **Circle:** $A = \pi r^2$, $P = 2\pi r$  
-> - **Rectangle:** $A = b \times h$, $P = 2(b + h)$  
-> - **Triangle:** $A = \frac{b \times h}{2}$, $P = side_1 + side_2 + base$  
-> - **Rhombus:** $A = \frac{D \times d}{2}$, $P = side \times 4$  
-> - **Trapezoid:** $A = \frac{(B + b) \times h}{2}$, $P = B + b + side_1 + side_2$  
+Enter the radius: 5
 
 
+Area = 78.54
+Perimeter = 31.42
 
-## Challenges
-> Currently, the `Calculator` function is quite large. Try moving the logic for *each* shape into its own separate function (e.g., `void calculateCircle()`) to make the code even cleaner.   
-> What happens if a user enters a negative radius or base? Add logic to prevent calculations with impossible dimensions.  
-> Add an option to calculate the volume of 3D shapes like a **Sphere** or a **Cube**.  
+
+press ENTER to continue...
