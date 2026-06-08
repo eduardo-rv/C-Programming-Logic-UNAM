@@ -1,29 +1,27 @@
-# Program 03: Movie Ticket Sales System
+# Program 3: Movie Ticket Sales System
 
-## Assignment
-> Create a basic ticket pre-sale system that allows users to select a movie from a menu and calculate the total price based on the quantity of tickets purchased. The program must apply a bulk discount if the purchase exceeds a specific threshold.
+![C Logic](https://img.shields.io/badge/C_Logic-Program_03-00599C?labelColor=2b2b2b&style=flat-square)
 
+This project is a CLI application that simulates a movie ticket pre-sale system. It provides a navigational menu for users to select a film, calculates the total cost based on the specific movie's pricing, and automatically applies a 35% discount for bulk purchases exceeding 25 tickets.
 
+The technical focus of this exercise introduces memory addresses and function prototyping. By utilizing pointers (*option, *amount), the program passes variables by reference into a void function, allowing multiple state changes to occur simultaneously without returning a value. Furthermore, the logic implements switch statements to manage menu routing efficiently and conditional statements to evaluate business logic thresholds for the discount system.
 
-## Requirements
-> Use a function to display the program description and header.  
-> Use a function with **pointers** to capture multiple user inputs (movie choice and ticket amount) simultaneously.  
-> Implement separate functions for price calculation and discount application.  
-> Use a `switch` statement to handle the four different movie options and their respective prices.  
-> Apply a **35% discount** only if the user buys more than **25 tickets**.  
-> Clear the terminal screen between sections to keep the interaction clean.  
+## Example Output
+```text
+Sale of movie tickets
+Description: Basic ticket pre-sale system that allows you to choose between four movies through a menu.
+It calculates the total to pay and applies a .35 discount on purchases of more than 25 tickets.
 
+Student: Rosas Vazquez Eduardo
+Course: Programming I - UNAM
 
+Press ENTER to start the program...
 
-## Mathematical Logic
-> $$Total = Price_{movie} \times Amount$$  
+1. Gol.__________ 100
+2. Gol 2_________ 200
+3. In undertow___ 300
+4. Next of kin___ 400
+Eneter your choice: 1
+Enter amount: 30
 
-> (if Amount > 25):  
-> $$Final Total = Total - (Total \times 0.35)$$
-
-
-
-## Challenges
-> Currently, if a user enters a number other than 1-4, the program might behave unexpectedly. Can you implement a "default" case or a loop to force a valid selection?  
-> Modify the program so that "Matinee" tickets (mornings) have a lower price than "Evening" tickets.  
-> Export the final transaction details (Movie name, quantity, subtotal, discount, and final total) into a simple `.txt` file using C file handling.  
+Total a pagar: 1950.00
