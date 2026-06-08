@@ -1,29 +1,20 @@
-# Program 04: Leap Year Checker
+# Program 4: Leap Year Checker
 
-## Assignment
-> Write a C program that determines whether a specific year entered by the user is a **Leap Year** or a **Common Year**. This exercise focuses on implementing conditional logic using nested `if` statements and the modulo operator (`%`).
+![C Logic](https://img.shields.io/badge/C_Logic-Program_04-00599C?labelColor=2b2b2b&style=flat-square)
 
+This project is a CLI application that evaluates whether a user-inputted year is a leap year or a standard year. It was developed as a collaborative exercise to practice mathematical evaluations and conditional control structures in C.
 
+The technical focus of this exercise revolves around nested conditional logic and the modulo operator (%). The algorithm determines leap years by validating a sequence of divisibility constraints (by 4, 100, and 400) necessary to account for the Gregorian calendar's true solar year alignment. Additionally, the codebase reinforces procedural programming by separating the user interface, screen manipulation, and mathematical processing into distinct modular functions (Display, ClearScreen, and CalculateYear).
 
-## Requirements
-> Prompt the user to enter a year (integer).  
-> Use the rules of the Gregorian calendar to verify the leap year status:  
-> A year is a leap year if it is divisible by 4.  
-> However, if it is divisible by 100, it must also be divisible by 400 to be a leap year.  
-> Include a program description and a header. Use a custom `ClearScreen` function to handle terminal transitions.  
-> Separate the calculation logic into its own function (`CalculateYear`).
+## Example Output
+```text
+------LEAP YEAR-------
 
+This program asks you for a year and tells you if the entered year is leap or normal. 
 
+Contreras Aviles José Raúl
+Rosas Vazquez Eduardo
+press enter to continue....
 
-## Mathematical Logic
-> A year is a leap year if it satisfies the following conditions:  
-> 1. $Year \pmod 4 = 0$  
-> 2. $Year \pmod{100} \neq 0$ (Unless $Year \pmod{400} = 0$
-
-
-
-## Challege
-> In this version, we use nested `if` statements. Can you rewrite the entire logic using a single `if` statement with logical operators (`&&` and `||`)?  
->   - *Hint:* `if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))`  
-> Add a check to ensure the year entered is a positive number (e.g., AD years only).  
-> Modify the program to print all leap years between two years entered by the user (e.g., between 2000 and 2050).
+Enter a year: 2024
+Is a leap year
