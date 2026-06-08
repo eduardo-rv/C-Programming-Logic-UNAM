@@ -1,37 +1,24 @@
-# Program 05: Triangle Classification
+# Program 5: Triangle Classifier
 
-## Assignment
-> Create a C program that requests the lengths of three sides from the user. The program must first validate if the given lengths can form a triangle and, if so, classify the triangle as **Equilateral**, **Isosceles**, or **Scalene**.
+![C Logic](https://img.shields.io/badge/C_Logic-Program_05-00599C?labelColor=2b2b2b&style=flat-square)
 
+This project is a CLI application that determines if three given lengths can form a valid triangle and, if so, classifies it based on its side proportions (Equilateral, Isosceles, or Scalene).
 
+The technical focus of this exercise is the implementation of mathematical theorems using compound logical operators. The program first applies the Triangle Inequality Theorem using the logical AND (`&&`) operator within a boolean-equivalent returning function to validate the geometry. Once validated, it utilizes the logical OR (`||`) operator alongside `if-else if` control structures to evaluate the equality of the sides and categorize the shape. The architecture maintains strict modularity, separating the validation logic from the classification and display outputs.
 
-## Requirements
-> Implement the Triangle Inequality Theorem to check if the three sides can actually form a triangle.  
-> **Equilateral:** All three sides are equal.  
-> **Isosceles:** At least two sides are equal.  
-> **Scalene:** All three sides are different.  
-> Use a function to validate the triangle (returning a boolean-like integer).  
-> Use a separate function to perform the classification and display the result.  
-> Include a clear header and a "Press ENTER to continue" mechanism to manage terminal flow.
+## Example Output
+```text
 
+CLASSIFICATION OF TRIANGLES
+This program asks you for the lengths of three sides and determines if the triangle is equilateral, isosceles, or scalene. 
 
+Author: Rosas Vazquez Eduardo
 
-## Mathematical Logic
-### 1. Triangle Inequality Theorem
-> A triangle is valid only if the sum of any two sides is greater than the third side:  
-> $a + b > c$  
-> $a + c > b$  
-> $b + c > a$  
+press ENTER to continue...
 
-### 2. Classification Definitions
-> **Equilateral:** $a = b = c$  
-> **Isosceles:** $(a = b) \lor (b = c) \lor (a = c)$  
-> **Scalene:** $a \neq b \land b \neq c \land a \neq c$
+Enter the value for side A: 5.5
+Enter the value for side B: 5.5
+Enter the value for side C: 3.2
 
 
-
-## Challenges
-> If the triangle is valid, calculate its area using Heron's formula:  
-> $Area = \sqrt{s(s-a)(s-b)(s-c)}$ where $s = \frac{a+b+c}{2}$ (semi-perimeter).  
-> Add a check to prevent the user from entering zero or negative values.  
-> Can you add a check to see if the triangle is also a **Right Triangle** using the Pythagorean theorem ($a^2 + b^2 = c^2$)?  
+Isosceles triangle
