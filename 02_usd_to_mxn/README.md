@@ -1,28 +1,18 @@
 # Program 02: Currency Converter (USD to MXN)
 
-## Assignment
-> Develop a C program that performs a currency conversion from United States Dollars (USD) to Mexican Pesos (MXN). The program should demonstrate the use of modular programming by utilizing functions for input handling, calculation, and display.
+![C Logic](https://img.shields.io/badge/C_Logic-Program_02-00599C?labelColor=2b2b2b&style=flat-square)
 
+This project is a CLI application designed to perform fixed-rate currency conversions from US Dollars (USD) to Mexican Pesos (MXN).
 
+The technical focus of this exercise is procedural modularity and function parameterization. Instead of executing the entirety of the logic within the "main()" block, the architecture is divided into distinct, single-purpose functions. It utilizes a "float" returning function to capture and pass user input, and a "void" function that accepts parameters to execute the mathematical conversion and print the results. Additionally, the standard output limits decimal rendering using specific floating-point precision formatters (%.2f).
 
-## Requirements
-> Create a function to handle the user input for the amount.  
-> Create a specific function to perform the math and display the result.  
-> Prompt the user to enter the amount in USD (using floating-point numbers for precision).  
-> Use a fixed exchange rate to convert the currency.  
-> Include a clear header and ensure the terminal is cleared before starting the main process.  
-> Output the conversion result formatted to 2 decimal places.  
+## Example Output
+```text
+Currency Convert: USD to MXN
+Student: Eduardo Rosas Vazquez
+Course: Programing I - UNAM
 
+Press ENTER to start the program... 
 
-
-## Mathematical Formula
-> The conversion is based on a fixed rate (e.g., $18.00$ MXN per $1.00$ USD):
-
-> $$Result (MXN) = Amount (USD) \times Exchange Rate$$
-
-
-
-## Challenges
-> Modify the program to ask the user for the *current* exchange rate instead of using a hardcoded value (like 18).  
-> Add a menu that allows the user to choose between converting USD to MXN or MXN to USD.  
-> Implement a loop so the user can perform multiple conversions without restarting the program# Program 02: Currency Converter (USD to MXN)  
+Amount to convert: 50.50
+50.50 USD = 909 MXN
