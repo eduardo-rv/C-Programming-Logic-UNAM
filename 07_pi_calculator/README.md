@@ -1,28 +1,22 @@
-# Program 07: PI Estimation (Leibniz Series)
+# Program 7: PI Estimator
 
-## Assignment
-> Create a program that estimates the value of $\pi$ (Pi) using the **Gregory-Leibniz series**. The program should allow the user to specify the number of terms to be used in the summation, demonstrating how the estimation becomes more accurate as the number of iterations increases.
+![C Logic](https://img.shields.io/badge/C_Logic-Program_07-00599C?labelColor=2b2b2b&style=flat-square)
 
+This project is a CLI application that estimates the mathematical constant PI ($\pi$) based on user-defined precision. The program calculates the value by processing a specific number of terms through the Gregory-Leibniz infinite series.
 
+The technical focus of this application is iterative mathematical computation and standard input buffer management. The logic utilizes a "for" loop to build the series, employing the modulo operator ("%") to alternate the arithmetic sign (+/-) for every iteration. To ensure high calculation accuracy, the application strictly uses double-precision floating-point variables ("double"). Furthermore, the codebase implements a robust, low-level buffer clearing function (while ((c = getchar()) != '\n' && c != EOF);) that safely discards residual input characters, preventing undefined behavior or skipped prompts during sequential standard inputs.
 
-## Requirements
-> Use the `double` data type for calculations to ensure high precision in the resulting estimate.  
-> Prompt the user for a positive integer representing the number of terms ($n$).  
-> Use a `for` loop to iterate through the series, alternating between addition and subtraction for each term.  
-> Implement a **Buffer Clear** function to prevent issues with subsequent inputs and handle potential errors if the user enters 0 or negative numbers.  
-> Display the final estimated value of $\pi$ with at least 10 decimal places.  
+## Example Output
+```text
+PI calculator.
+Description: This tool calculates PI by summing a series of fractions. The precision increases as more terms are added to the calculation.
 
+Author: Rosas Vazquez Eduardo.
 
+press ENTER to continue...
 
-## Mathematical Logic
-> The program implements the Gregory-Leibniz formula:  
-> $$\pi = 4 \times \sum_{i=0}^{n-1} \frac{(-1)^i}{2i + 1} = 4 \times \left( 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} \dots \right)$$  
-
-> As $n \to \infty$, the result converges to the true value of $\pi$.
+Enter the number of terms to calculate PI: 100000
 
 
-
-## Challenges
-> Compare your result with the constant `M_PI` from the `<math.h>` library and calculate the percentage of error.  
-> Measure how long the CPU takes to calculate 10,000,000 terms using the `<time.h>` library.  
-> Modify the program to ask the user for a desired precision (e.g., $0.0001$) instead of a number of terms, and have the loop run until that accuracy is achieved.
+Estimation finished for 100000 terms.
+Estimated value of PI: 3.1415826536
